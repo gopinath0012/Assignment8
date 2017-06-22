@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Welcome page</title>
+</head>
+ 
+<body>
+   
+    
+    <form action="" id="form1">
+    Name: <input type= "text" size="20"/><br><br>
+		Password:<input type="password" size="30"/><br><br>
+		Address: <textarea rows="3" cols="30"></textarea><br><br>
+		Login:<input type="submit" value="submit"/><br><br>
+		
+		Forgot Password:<input type="reset" value="reset"/><br><br>
+		
+		
+        <fieldset>
+            <legend>Book List:</legend> 
+            <br>
+            <input type="text" name="Book 1" value="Tekcel" readonly>
+            <br> Book 1:
+            <br>
+            <input type="text" name="Book 2" value="Gopinath" readonly>
+            <br> Book 2:
+            <br>
+            <input type="text" name="Book 3" value="Rohit" readonly>
+            <br> Book 3:
+            <br>
+            <input type="text" name="Book 4" value="Sukhvinder" readonly>
+            <br> Book 4:
+            <br>
+            <input type="text" name="Book 5" value="Kranthi" readonly>
+            
+    </form>
+    </body>
+ <button onclick="onClick(this)" id="button1">Browse Books</button>
+    
+    <a href="NewFile.jsp">
+    <button onclick="onClick(this)" id="button2">Logout</button>
+    </a>
+    
+
+<script>
+    function onClick(x) {
+        if (x.id === 'button1') document.getElementById("form1");
+    }
+</script>
+ 
+</html>
